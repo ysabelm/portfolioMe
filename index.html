@@ -8,6 +8,8 @@
     <meta name="description" content="This is a portfolio site">
     <title>Isabelle Monfort</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='resources/css/reset.css'>
     <link rel='stylesheet' href='resources/css/index.css'>
 </head>
@@ -15,17 +17,87 @@
 <body>
 
     <header>
-        <img src="" alt="">
-        <div class="header-presentation">
-            <h1 class="header-title">ISABELLE MONFORT</h1>
-            <h2 class="header-descriptive">Front-end Developer</h2>
-        </div>
-        <div id="menu">Menu</div>
+        <nav>
+            <img src="resources/images/ma_binette.jpg" alt="my face">
+            <div class="header-presentation">
+                <h1 class="header-title">ISABELLE MONFORT</h1>
+                <h2 class="header-descriptive">Front-end Developer</h2>
+            </div>
+            <button class="btn"><i class="fa fa-bars"></i> Menu</button>
+        </nav>
     </header>
+    <ul id="breadcrumb" role="navigation">
+        <li role="listitem">
+            <a href="/">Home</a>
+        </li>
+    </ul>
 
-    <main></main>
+    <main>
+        <section id="programming">
+            <h2>What I do</h2>
+            <div class="programming-items">
+                <div id="neighborhood-map">
+                    <h3>Neighborhood Map</h3>
+                </div>
+                <div id="restaurant-reviews">
+                    <h3>Restaurant Reviews</h3>
+                </div>
+                <div id="my-reads">
+                    <h3>My Reads</h3>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Who I Am</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+                tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et
+                sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+                wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus
+                enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+                faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui
+                mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+            </p>
+        </section>
+        <section id="opinion">
+            <h2>Let me tell you</h2>
+            <article class="article-items">
+                <div id="2018-09-D1">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                        sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                        Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+                        commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+                        ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+                    </p>
+                    <button>Read More...</button>
+                </div>
+                <div id="2018-09-D2">
+                    <p>Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+                        faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+                        Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                    </p>
+                    <button>Read More...</button>
+                </div>
+                <div id="2018-09-D3">
+                    <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem
+                        tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+                    </p>
+                    <button>Read More...</button>
+                </div>
+            </article>
+        </section>
+    </main>
 
-    <footer></footer>
+    <footer>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fab fa-github"></a>
+        Copyright (c) 2018
+        <a href="/" title="Back to homepage">
+            <strong>Isabelle Monfort</strong>
+        </a>All Rights Reserved.
+    </footer>
 
 </body>
 
