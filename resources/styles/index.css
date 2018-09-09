@@ -86,30 +86,39 @@ main h2 {
 
 /* ====================== CSS sections ====================== */
 
-.programming {
+.programming-items {
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.programming-items {
-    display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-#neighborhood-map {
-    background-image: url('resources/images/small-neighborhood-map.png');
+.
+.neighborhood-map {
+    background-image: url('../images/small-neighborhood-map.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10em;
+    width: 25%;
 }
 
-#memory-game {
-    background-image: url('resources/images/small-memory-game.png');
+.memory-game {
+    background-image: url('../images/small-memory-game.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10em;
+    width: 25%;
 }
 
-#my-reads {
-    background-image: url('resources/images/small-my-reads.png');
+.my-reads {
+    background-image: url('../images/small-my-reads.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10em;
+    width: 25%;
 }
 
 /* ====================== CSS footer ====================== */
