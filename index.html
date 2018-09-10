@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="This is a portfolio website">
-    <title>Isabelle Monfort</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel='stylesheet' href='resources/styles/reset.css'>
     <link rel='stylesheet' href='resources/styles/index.css'>
+    <title>Isabelle Monfort</title>
 </head>
 
 <body>
@@ -21,11 +21,11 @@
         <nav>
             <img src="resources/images/small-ma-binette.jpg" alt="my face">
             <div class="header-presentation">
-                <h1 class="header-name">ISABELLE MONFORT</h1>
-                <h2 class="header-title">Front-end Developer</h2>
-                <h2 class="header-descriptive">HTML, CSS, JavaScript, React</h2>
+                <h1 class="header-name" role="heading" aria-level="1">ISABELLE MONFORT</h1>
+                <h2 class="header-title" role="heading" aria-level="2">Front-end Developer</h2>
+                <h2 class="header-descriptive" role="heading" aria-level="2">HTML, CSS, JavaScript, React</h2>
             </div>
-            <button class="btn-menu"><i class="fa fa-bars"></i> Menu</button>
+            <button class="btn-menu" role="menu" aria-expanded="true"><i class="fa fa-bars"></i>Menu</button>
         </nav>
     </header>
     <ul id="breadcrumb" role="navigation">
@@ -36,21 +36,21 @@
 
     <main class="main-content">
         <section class="programming">
-            <h2>What I do</h2>
+            <h2 role="heading" aria-level="2">What I do</h2>
             <div class="programming-items">
                 <div class="item neighborhood-map">
-                    <h3>Neighborhood Map</h3>
+                    <a href="#">Neighborhood Map</a>
                 </div>
                 <div class="item memory-game">
-                    <h3>Memory Game</h3>
+                    <a href="#">Memory Game</a>
                 </div>
                 <div class="item my-reads">
-                    <h3>My Reads</h3>
+                    <a href="#">My Reads</a>
                 </div>
             </div>
         </section>
         <section id="about">
-            <h2>Who I Am</h2>
+            <h2 role="heading" aria-level="2">Who I Am</h2>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
                 tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
                 egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et
@@ -62,7 +62,7 @@
             </p>
         </section>
         <section id="opinion">
-            <h2>Let me tell you</h2>
+            <h2 role="heading" aria-level="2">Let me tell you</h2>
             <article class="article-items">
                 <div class="article a001">
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -93,9 +93,9 @@
 
     <footer>
         <div class="fa-icons">
-            <i class="fab fa-github" target="_blank"></i>
-            <i class="fab fa-linkedin-in" target="_blank"></i>
-            <i class="fab fa-twitter"target="_blank"></i>
+            <i href="https://github.com/ysabelm" class="fab fa-github" target="_blank"></i>
+            <i href="#" class="fab fa-linkedin-in" target="_blank"></i>
+            <i href="https://twitter.com/ysabelmonfort" class="fab fa-twitter" target="_blank"></i>
         </div>
         <div class="copyright">
             Copyright (c) 2018

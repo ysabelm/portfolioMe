@@ -117,19 +117,24 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.2em solid aquamarine;
+    border: 0.2em solid #333333;
 }
 
-.item h3 {
+.item a {
     font-family: 'Oswald';
     letter-spacing: 0.1em;
     text-align: center;
+    text-decoration: none;
     margin: 0.5em 0;
     width: 50%;
     height: 2em;
     color: whitesmoke;
     background-color: #333333;
     border-radius: 7%;
+}
+
+.item a:hover {
+    opacity: 0.8;
 }
 
 .neighborhood-map {
