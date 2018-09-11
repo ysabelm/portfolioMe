@@ -2,11 +2,11 @@
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font: 1em 'Lato', sans-serif;
 }
 
 body {
+    width: 100vh;
     position: relative;
     margin: 0;
     box-sizing: border-box;
@@ -28,31 +28,33 @@ nav,
 footer {
     font-family: 'Oswald';
     background-color: aquamarine;
+    box-sizing: border-box;
     width: 100vh;
 }
 
 /* ====================== CSS header ====================== */
 nav {
     position: absolute;
-    height: 10em;
+    height: 14em;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav img {
     margin: 0.5em 0;
-    border-radius: 4em;
+    width: 25%;
+    border-radius: 50%;
 }
 
 nav h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .header-presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .header-title {
@@ -64,11 +66,12 @@ nav h1 {
 }
 
 .btn-menu {
-    margin: 0.5em;
+    position: relative;
+    margin-top: 11em;
+    width: 25%;
     background-color: transparent;
     color: #333333;
     border: none;
-    padding: 0.75em 1em;
     font-size: 1em;
     cursor: pointer;
 }
@@ -79,7 +82,7 @@ nav h1 {
 
 /* ====================== CSS main ====================== */
 .main-content {
-    margin-top: 8.5em;
+    margin-top: 1em;
     width: 100vh;
     display: flex;
     flex-direction: column;
@@ -89,15 +92,18 @@ nav h1 {
 .main-content h2 {
     font-family: 'Oswald';
     font-size: 2em;
-    text-align: center;
+    margin-left: 5%;
 }
 
 /* ====================== CSS sections ====================== */
+section {
+    margin: 0.5em 0;
+}
+
 .programming {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
 }
 
 .programming-items {
@@ -112,7 +118,7 @@ nav h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 80%;
+    width: 90%;
     height: 20em;
     display: flex;
     justify-content: center;
@@ -149,12 +155,40 @@ nav h1 {
     background-image: url('../images/small-my-reads.png');
 }
 
+.opinion {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-items {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.article-items button {
+    width: 25%;
+}
+
+.article-items p {
+    margin: 0.5em 0;
+}
+
+article {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+
 /* ====================== CSS footer ====================== */
 footer {
     display: flex;
     flex-direction: row;
     height: 5em;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -167,6 +201,5 @@ footer {
 }
 
 .fa-icons {
-    display: flex;
     width: 30%;
 }
