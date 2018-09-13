@@ -83,14 +83,14 @@ nav h1 {
 
 .main-content h2 {
     font-family: 'Oswald';
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 5%;
     border-bottom: 0.01em solid gray;
 }
 
 /* ====================== CSS sections ====================== */
 section {
-    margin: 0.5em 0;
+    margin: 0.5em;
 }
 
 .programming-items {
@@ -142,7 +142,7 @@ section {
 }
 
 .article-items button {
-    width: 25%;
+    width: 30%;
     background-color: white;
 }
 
