@@ -43,18 +43,18 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em;
 }
 
 
 nav img {
     margin: 0;
     height: 3em;
-    border-radius: 50%;
+    border-radius: 35%;
 }
 
 nav h1 {
-    font-size: 1.2em;
+    font-size: 1em;
     align-self: flex-end;
 }
 
@@ -142,7 +142,7 @@ section {
 }
 
 .article-items button {
-    width: 30%;
+    width: 8em;
     background-color: white;
 }
 
@@ -156,6 +156,9 @@ article {
     margin: 1em 0.5em;
 }
 
+article img {
+    width: 100%;
+}
 
 /* ====================== CSS footer ====================== */
 footer {
@@ -176,9 +179,17 @@ footer {
 
 .fa-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 30%;
     height: auto    ;
+}
+
+.copyright {
+    font-size: 0.7em;
+}
+
+.copyright,
+.fa-icons {
+    padding: 0.4em;
 }
