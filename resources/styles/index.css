@@ -40,7 +40,6 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
@@ -55,11 +54,9 @@ nav img {
 
 nav h1 {
     font-size: 1em;
-    align-self: flex-end;
 }
 
-.header-title,
-.header-descriptive {
+.header-precision {
     display: none;
 }
 
@@ -146,10 +143,6 @@ section {
     background-color: white;
 }
 
-.article-items p {
-    margin: 0.5em;
-}
-
 article {
     display: flex;
     flex-direction: column;
@@ -163,7 +156,7 @@ article img {
 /* ====================== CSS footer ====================== */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 5em;
     justify-content: center;
     align-items: center;
@@ -179,10 +172,9 @@ footer {
 
 .fa-icons {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 30%;
-    height: auto    ;
+    height: auto;
 }
 
 .copyright {
@@ -191,5 +183,77 @@ footer {
 
 .copyright,
 .fa-icons {
-    padding: 0.4em;
+    margin: 0.4em;
+}
+
+/* ====================== CSS responsive 600px-760px ====================== */
+@media screen and (min-width: 600px) {
+    .header-precision {
+        display: block;
+    }
+
+    .header-name {
+        width: 50%;
+    }
+
+    nav h1 {
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+    }
+
+    nav h2 {
+        font-size: 0.8em;
+    }
+
+    .identity {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-menu {
+        font-size: 1.5em;
+    }
+
+    nav img {
+        height: 6em;
+    }
+
+    .main-content {
+        margin-top: 7em;
+    }
+
+    .programming-items {
+        flex-direction: row;
+    }
+
+    .item {
+        height: 12em;
+    }
+
+    .neighborhood-map {
+        flex-grow: 3;
+    }
+
+    .memory-game,
+    .my-reads {
+        flex-grow: 1;
+    }
+
+    .copyright {
+        font-size: 1em;
+    }
+}
+
+/* ====================== CSS responsive tablet ====================== */
+@media screen and (min-width: 760px) {
+    nav {
+        justify-content: space-around;
+    }
+
+    nav h1 {
+        font-size: 1.4em;
+        letter-spacing: 0.1em;
+    }
+
 }
