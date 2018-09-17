@@ -120,6 +120,7 @@ section {
     height: auto;
     color: whitesmoke;
     background-color: #333333;
+    cursor: pointer;
 }
 
 .item a:hover {
@@ -254,7 +255,14 @@ footer {
         font-size: 1.4em;
         letter-spacing: 0.1em;
     }
+    .neighborhood-map,
+    .aside {
+        width: 50%;
+    }
 
-    
+    .aside {
+        flex-direction: column;
+    }
+
 
 }
