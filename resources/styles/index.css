@@ -87,6 +87,7 @@ section {
 }
 
 .programming-items,
+.article-items,
 .aside {
     display: flex;
     flex-direction: column;
@@ -228,10 +229,15 @@ footer {
         margin-top: 7em;
     }
 
-    .programming-items {
-        flex-flow: row wrap;
-        height: 20em;;
+    .programming-items,
+    .article-items {
+        flex-direction: row;
         justify-content: space-around;
+    }
+
+    .article-items {
+        margin: 1em;
+
     }
 
     .first {
@@ -247,11 +253,18 @@ footer {
         height: 15em;
     }
 
+
     .memory-game,
-    .my-reads {
+    .my-reads,
+    .a002,
+    .a003 {
         width: 100%;
         height: 8em;
         margin: 0.2em;
+    }
+
+    .article-items p, button {
+        display: none;
     }
 
     .copyright {
@@ -265,14 +278,5 @@ footer {
         font-size: 1.4em;
         letter-spacing: 0.1em;
     }
-    .neighborhood-map,
-    .aside {
-        width: 50%;
-    }
-
-    .aside {
-        flex-direction: column;
-    }
-
 
 }
