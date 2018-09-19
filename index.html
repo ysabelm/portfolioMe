@@ -67,36 +67,29 @@
             </p>
         </section>
         <section class="opinion">
-            <h2 role="heading" aria-level="2">Let me tell you</h2>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
-                sit amet quam egestas semper. Aenean ultricies mi vitae est.
-            </p>
-            <div class="opinion-items">
-                <article class="item first">
-                    <img src="" alt="photo">
-                    <p>Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
-                        faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-                    <button>Read More...</button>
-                </article>
-                <div class="second">
-                    <article class="item">
-                        <img src="" alt="poster">
-                        <p>Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
-                            faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-                        </p>
-                        <button>Read More...</button>
-                    </article>
-                    <article class="item">
-                        <img src="" alt="poster">
-                        <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate
-                            sem
-                            tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
-                        </p>
-                        <button>Read More...</button>
-                    </article>
-                </div>
+            <h2>Let me tell you</h2>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')">Code</button>
+                <button class="btn" onclick="filterSelection('animals')">Cinema</button>
+                <button class="btn" onclick="filterSelection('fruits')">Drama</button>
+                <button class="btn" onclick="filterSelection('colors')">Reading</button>
+            </div>
 
+            <div class="container">
+                <div class="filterDiv code">Article 1</div>
+                <div class="filterDiv cinema reading">Article 2</div>
+                <div class="filterDiv code">Article 3</div>
+                <div class="filterDiv cinema">Article 4</div>
+                <div class="filterDiv code reading">Article 5</div>
+                <div class="filterDiv code">Article 6</div>
+                <div class="filterDiv drama">Article 7</div>
+                <div class="filterDiv code">Article 8</div>
+                <div class="filterDiv reading">Article 9</div>
+                <div class="filterDiv reading drama">Article 10</div>
+                <div class="filterDiv reading">Article 11</div>
+                <div class="filterDiv code">Article 12</div>
+                <div class="filterDiv drama">Article 13</div>
             </div>
         </section>
     </main>
@@ -116,6 +109,7 @@
         </div>
     </footer>
 
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
 </body>
 
 </html>
