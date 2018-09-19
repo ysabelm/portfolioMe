@@ -4,7 +4,7 @@ function filterSelection(c) {
     let filter, i;
     filter = document.getElementsByClassName("filterDiv");
     if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
+    for (i = 0; i < filter.length; i++) {
         RemoveClass(filter[i], "show");
         if (filter[i].className.indexOf(c) > -1) AddClass(filter[i], "show");
     }
